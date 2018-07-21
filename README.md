@@ -4,7 +4,7 @@ ROSeq evaluates differential expression between two subpopulations of single cel
 
 ## Installation
 
-To get started with ROSeq, git clone or download the complete ROSeq [repository](https://github.com/malaalam/ROSeq) on to your PC. Next, double click the executable file *ROSeq/06_installation/OS/for_redistribution/MyAppInstaller_mcr.exe* for installing the software on your respective operating system. 
+To get started with ROSeq, git clone or download the complete ROSeq [repository](https://github.com/malaalam/ROSeq) on to your PC. Next, double click the executable file *ROSeq/06_installation/OS/ROSeq/for_redistribution/MyAppInstaller_mcr.exe* for installing the software on your respective operating system (OS = 01_Windows, 02_macOS, 03_Linux). 
 
 ## Tutorial 
 
