@@ -8,7 +8,7 @@ To get started with ROSeq, git clone or download the complete ROSeq [repository]
 
 ## Tutorial 
 
-This tutorial below, provides instructions to upload the (un) normalized read count file corresponding to single cells coming from the individuals *NA19098* and *NA19101*, in the [tung2017](https://www.ncbi.nlm.nih.gov/pubmed/28045081) data set; and subsequently analyse the two subpopulations for differential expression. 
+This tutorial below, provides instructions to upload the (un) normalized read count data corresponding to single cells coming from the individuals *NA19098* and *NA19101*, in the [tung2017](https://www.ncbi.nlm.nih.gov/pubmed/28045081) data set; and subsequently analyse the two subpopulations for differential expression. 
 
 The number of single cells equals 288 for each individual. After filtering with a threshold equal to six, low quality genes are eliminated and the number of genes considered for differential expression analysis reduces from 19027 to 16087. This is also prompted as a message in the Status Panel. 
 
