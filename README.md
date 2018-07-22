@@ -8,7 +8,7 @@ Single cell transcriptomics provides a window into cell-to-cell variability in c
 
 ## Downloads
 
-The Research Artcle and Supplementary Material is available for download [here](https://www.biorxiv.org/content/early/2018/07/22/374025).
+The Research Article and Supplementary Material is available for download [here](https://www.biorxiv.org/content/early/2018/07/22/374025).
 
 The R code used for producing differential analysis results with methods like SCDE, ROTS, MAST and Wilcoxon-Rank Sum will shortly be made available for download.
 
