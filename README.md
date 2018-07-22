@@ -12,9 +12,11 @@ The Paper and Supplementary Material is available for download [here](https://ww
 
 The R code used for producing differential analysis results with methods like SCDE, ROTS, MAST and Wilcoxon-Rank Sum will be shortly made available for download.
 
-## Installation
+## Getting Started
 
-To get started with ROSeq, git clone or download the complete ROSeq [repository](https://github.com/malaalam/ROSeq) on to your PC. Next, double click the executable file *ROSeq/06_installation/OS/ROSeq/for_redistribution/MyAppInstaller_mcr.exe* for installing the software on your respective operating system (OS = 01_Windows, 02_macOS, 03_Linux). 
+As a first step, download the complete ROSeq [repository](https://github.com/malaalam/ROSeq) on to your PC. This would provide the files needed to run the Tutorial Below.
+
+Also, go to the Releases Section of the repository and download the executables specific to your operating system. Support is provided for Windows, macOS and Linux.
 
 ## Tutorial 
 
