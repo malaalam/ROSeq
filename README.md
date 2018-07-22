@@ -2,6 +2,12 @@
 
 ROSeq evaluates differential expression between two subpopulations of single cells by modeling the rank distribution of read counts for each gene. 
 
+## Downloads
+
+The Paper and Supplementary Material is available for download [here](https://www.biorxiv.org/content/early/2018/07/22/374025).
+
+The R code used for producing differential analysis results with methods like SCDE, ROTS, MAST and Wilcoxon-Rank Sum will be shortly made available for download.
+
 ## Installation
 
 To get started with ROSeq, git clone or download the complete ROSeq [repository](https://github.com/malaalam/ROSeq) on to your PC. Next, double click the executable file *ROSeq/06_installation/OS/ROSeq/for_redistribution/MyAppInstaller_mcr.exe* for installing the software on your respective operating system (OS = 01_Windows, 02_macOS, 03_Linux). 
@@ -32,11 +38,6 @@ Following would constitute as a complete set of steps from uploading read count 
 
 ![Screenshot of ROSeq]({{ "/05_images/ROSeq.PNG" | absolute_url }})
 
-## Downloads
-
-The Paper and Supplementary Material is available for download here.
-
-The R code used for producing differential analysis results with methods like SCDE, ROTS, MAST and Wilcoxon-Rank Sum is available for download here.
 
 ## Datasets
 
