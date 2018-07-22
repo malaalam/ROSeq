@@ -1,4 +1,4 @@
-# ROSeq
+# ROSeq - A rank based approach to modeling gene expression in single cells
 
 ROSeq evaluates differential expression between two subpopulations of single cells by modeling the rank distribution of read counts for each gene. 
 
