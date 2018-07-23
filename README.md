@@ -10,13 +10,13 @@ Single cell transcriptomics provides a window into cell-to-cell variability in c
 
 The Research Article and Supplementary Material is available for download [here](https://www.biorxiv.org/content/early/2018/07/22/374025).
 
-The R code used for producing differential analysis results with methods like SCDE, ROTS, MAST and Wilcoxon-Rank Sum will shortly be made available for download.
+The R code used for producing differential analysis results with methods like SCDE, ROTS, MAST and Wilcoxon-Rank Sum is also avaialable for download in the directory "04_R_code.zip" available in the **Release** section of the repository, in case you wish to reproduce the results.
 
 ## Getting Started
 
 As a first step, download the complete ROSeq [repository](https://github.com/malaalam/ROSeq) on to your PC. This would provide the files needed to run the Tutorial Below.
 
-Also, go to the **Releases** Section of the repository and download the executables specific to your operating system. Support is provided for Windows, macOS and Linux.
+Also, go to the **Release** Section of the repository and download the executables specific to your operating system. Support is provided for Windows, macOS and Linux.
 
 ## Tutorial 
 
