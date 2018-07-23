@@ -16,7 +16,7 @@ The R code used for producing differential analysis results with methods like SC
 
 As a first step, download the complete ROSeq [repository](https://github.com/malaalam/ROSeq) on to your PC. This would provide the files needed to run the Tutorial Below.
 
-Also, go to the Releases Section of the repository and download the executables specific to your operating system. Support is provided for Windows, macOS and Linux.
+Also, go to the **Releases** Section of the repository and download the executables specific to your operating system. Support is provided for Windows, macOS and Linux.
 
 ## Tutorial 
 
