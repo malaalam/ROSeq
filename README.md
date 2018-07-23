@@ -10,7 +10,7 @@ Single cell transcriptomics provides a window into cell-to-cell variability in c
 
 The Research Article and Supplementary Material is available for download [here](https://www.biorxiv.org/content/early/2018/07/22/374025).
 
-The R code used for producing differential analysis results with methods like SCDE, ROTS, MAST and Wilcoxon-Rank Sum is also avaialable for download in the directory "04_R_code.zip" available in the **Release** section of the repository, in case you wish to reproduce the results.
+The R code used for producing differential analysis results with methods like SCDE, ROTS, MAST and Wilcoxon-Rank Sum is also avaialable for download in the directory "04_R_code.zip" available in the **Release** section of the repository, in case one wishes to reproduce the results.
 
 ## Getting Started
 
