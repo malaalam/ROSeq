@@ -16,7 +16,7 @@ The R code used for producing differential analysis with methods like SCDE, ROTS
 
 As a first step, download the complete ROSeq [repository](https://github.com/malaalam/ROSeq) on to your PC. This would provide the files needed to run the Tutorial Below.
 
-Also, go to the **Release** Section of the repository and download the executables specific to your operating system. Support is provided for Windows, macOS and Linux. Once the zip folder has been downloaded, extract it to a desirable location. Next, open the for_redistribution directory and double click the executable file within to begin the installation process.
+Also, go to the **Release** Section of the repository and download the executables specific to your operating system. Support is provided for Windows, macOS and Linux. Once the zip folder has been downloaded, extract it to a desirable location. Next, open the **for_redistribution** directory and double click the executable file within to begin the installation process.
 
 ## Tutorial 
 
