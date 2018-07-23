@@ -47,7 +47,7 @@ Following would constitute as a complete set of steps from uploading read count 
 
 ## Datasets
 
-The [tung2017](https://www.ncbi.nlm.nih.gov/pubmed/28045081) dataset was downloaded from [jdblischak](https://github.com/jdblischak/singleCellSeq)'s Repository. 
+The [tung2017](https://www.ncbi.nlm.nih.gov/pubmed/28045081) dataset was downloaded from [jdblischak](https://github.com/jdblischak/singleCellSeq)'s Repository. Bulk RNA-seq read count data was extracted from **bulk_reads-per-sample.txt**, while single cell RNA-seq data was extracted from **molecules.txt**. (See R code in the Release Subsection of the repository)
 
-The [trapnell2014](http://www.nature.com/articles/nbt.2859) dataset was downloaded from 
+
 
