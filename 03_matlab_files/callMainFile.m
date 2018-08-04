@@ -144,10 +144,10 @@ myhandles.results=results;
 % *************************************************************************
 % Save Meta Data Results - Optional (Helps in Troubleshooting!)
 % *************************************************************************
-saveMetaData(myhandles);
-saveMetaImages(myhandles);
-saveSingleMetaImage(myhandles);
-saveFitImage(myhandles);
+%saveMetaData(myhandles);
+%saveMetaImages(myhandles);
+%saveSingleMetaImage(myhandles);
+%saveFitImage(myhandles);
 
 % *************************************************************************
 % Add a message to indicate that DE analysis is complete
