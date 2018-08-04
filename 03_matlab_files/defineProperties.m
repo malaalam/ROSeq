@@ -15,7 +15,7 @@ function [ myhandles ] = defineProperties( source, eventdata, varargin )
   myhandles.projectFile='';
   myhandles.projectPath='';
   myhandles.results='';
-
+    
   
   myhandles.defaultFileLocation='';
   myhandles.rawFileLocation='';

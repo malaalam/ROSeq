@@ -1,4 +1,4 @@
-function [ results ] =find_a_b( data_set )
+function [ results ] =find_a_b( data_set, stats )
 % *************************************************************************
 % This function 'find_a_b' finds the optimal values of the parameters a and
 % b through Maximising the Log Likelihood.
@@ -14,16 +14,23 @@ number_of_genes=size(data_set, 1);
 % For EACH gene, evaluate the best fitting coefficients
 % *************************************************************************
 fig_wait=waitbar(0,'Modeling a Sub-Population, one gene at a time...');
+
+meands=stats.meands;
+stdds=stats.stdds;
+ceilds=stats.ceilds;
+floords=stats.floords;
+
 for gene=1:number_of_genes
     waitbar(gene/number_of_genes);
     ds=data_set(gene, :);
-    load('stats');
+    %    load('stats');
+    
     step=0.05;
     rs=[];
-% *************************************************************************
-% Determine the frequency or number of occurences of read counts within a
-% certain bin. Bin Width is set to be equal to 0.05 times sigma. 
-% *************************************************************************
+    % *************************************************************************
+    % Determine the frequency or number of occurences of read counts within a
+    % certain bin. Bin Width is set to be equal to 0.05 times sigma.
+    % *************************************************************************
     
     for i=floords(gene,1):step:ceilds(gene,1)-step
         LL=meands(gene,1)+i*stdds(gene,1);
@@ -42,13 +49,13 @@ for gene=1:number_of_genes
         @(coefficients)minimize_NLL(coefficients, rank, normalized_read_count_sorted);
     coefficients0=[0.25, 3];
     options = optimset('MaxFunEvals',1000);
-
-
-% *************************************************************************
-% Use fminsearch() to determine the best fitting a and b through an
-% iterative procedure
-% *************************************************************************
-
+    
+    
+    % *************************************************************************
+    % Use fminsearch() to determine the best fitting a and b through an
+    % iterative procedure
+    % *************************************************************************
+    
     [correctCoefficients,errorValue] = fminsearch(fun,coefficients0,options);
     if isnan(errorValue)
         a=NaN;
@@ -64,9 +71,9 @@ for gene=1:number_of_genes
     SS_res=sum((normalized_read_count_sorted-f).^2);
     SS_tot=sum((normalized_read_count_sorted-mean(normalized_read_count_sorted)).^2);
     R2=1-SS_res/SS_tot;
-% *************************************************************************
-% Save the results as a structure variable to be returned from this function
-% l************************************************************************
+    % *************************************************************************
+    % Save the results as a structure variable to be returned from this function
+    % l************************************************************************
     
     results{gene, 1}.a=a;
     results{gene, 1}.b=b;

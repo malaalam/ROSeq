@@ -92,15 +92,18 @@ for gene=1:geneCount
    mean(subPopulation_Two(gene, :))));
 end
 
-save('stats', 'meands','stdds', 'ceilds', 'floords', 'minds', 'maxds')
+stats.meands=meands;
+stats.stdds=stdds;
+stats.ceilds=ceilds;
+stats.floords=floords;
 
 % *************************************************************************
-% Find the Best Fitingt Parameters individually for Group One and Two
+% Find the Best Fitting Parameters individually for Groups One and Two
 % *************************************************************************
 
-results_groupOne=analyse_group_Zipf(subPopulation_One);
+results_groupOne=analyse_group_Zipf(subPopulation_One, stats);
 myhandles.results_groupOne=results_groupOne;
-results_groupTwo=analyse_group_Zipf(subPopulation_Two);
+results_groupTwo=analyse_group_Zipf(subPopulation_Two, stats);
 myhandles.results_groupTwo=results_groupTwo;
 
 
