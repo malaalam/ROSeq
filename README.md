@@ -51,7 +51,7 @@ The [tung2017](https://www.ncbi.nlm.nih.gov/pubmed/28045081) dataset was downloa
 
 ## Troubleshooting
 
-In case of any issues or to dive deeper into the implementation, please access the original MATLAB code which has been used to build the Graphical Interface. The file *initializeGUI.m*, available in the directory *03_matlab_files* is the entry point to the code. Run this file (press F5 button) and debug! If the problem is not solved through this approach, feel free to start an *issue* here.
+In case of any issues or to dive deeper into the implementation, please access the original MATLAB code which has been used to build the Graphical Interface. The file *initializeGUI.m*, available in the directory *03_matlab_files* is the entry point to the code. Run this file (press F5 button) and debug! If the problem is not solved through this approach, feel free to start an *issue* [here](https://github.com/malaalam/ROSeq/issues).
 
 
 
