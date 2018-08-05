@@ -49,5 +49,9 @@ Following would constitute as a complete set of steps from uploading read count 
 
 The [tung2017](https://www.ncbi.nlm.nih.gov/pubmed/28045081) dataset was downloaded from [jdblischak](https://github.com/jdblischak/singleCellSeq)'s Repository. Bulk RNA-seq read count data was extracted from **bulk_reads_per_sample.txt**, while single cell RNA-seq read count data was extracted from **molecules.txt**. (See R code in the Release Subsection of the repository.)
 
+## Troubleshooting
+
+In case of any issues, please access the original MATLAB code which has been used to build the Graphical Interface. The file *initializeGUI.m* is the entry point to the code. Run it (press F5 button) and debug! If the problem is not solved, feel free to start an *issue* here.
+
 
 
