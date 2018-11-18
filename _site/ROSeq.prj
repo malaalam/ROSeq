@@ -1,0 +1,186 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="604310756" file="/Users/mananlalit/ROSeq/ROSeq.prj" location="/Users/mananlalit/ROSeq" name="ROSeq" preferred-package-location="/Users/mananlalit/Documents/MATLAB/C:\Users\manan\Desktop\GITHUB\ROSeq\03_matlab_files\ROSeq_3\for_redistribution" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>ROSeq</param.appname>
+    <param.icon>${PROJECT_ROOT}/ROSeq_resources/icon.icns</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}/ROSeq_resources/icon_48.png</file>
+      <file>${PROJECT_ROOT}/ROSeq_resources/icon_32.png</file>
+      <file>${PROJECT_ROOT}/ROSeq_resources/icon_24.png</file>
+      <file>${PROJECT_ROOT}/ROSeq_resources/icon_16.png</file>
+    </param.icons>
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Manan Lalit</param.authnamewatermark>
+    <param.email />
+    <param.company />
+    <param.summary>ROSeq evaluates differential expression between two subpopulations of single cells by modeling the rank distribution of read counts for each</param.summary>
+    <param.description>Single cell transcriptomics provides a window into phenotypic diversity in complex tissues. Modeling single cell expression is challenging due to the high levels of noise and technical bias. In the past few years, considerable efforts have been made to devise suitable parametric models for single cell expression data. We use Discrete Generalized Beta Distribution (DGBD) to model read counts corresponding to a gene as a function of ranks. Use of DGBD yields better overall fit across genes compared to the widely used mixture model comprising Poisson and Negative Binomial density functions. Further, we use Wald's test to probe into differential expression across cell sub-types. We package our implementation as a standalone software called ROSeq. When applied on real data-sets, ROSeq performed competitively compared to the state of the art methods including MAST, SCDE and ROTS.</param.description>
+    <param.screenshot>${PROJECT_ROOT}/05_images/RNA.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>/ROSeq/</param.installpath.string>
+    <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes>In the following directions, replace MR/v94 by the directory on the target machine where MATLAB is installed, or MR by the directory where the MATLAB Runtime is installed.
+
+If the environment variable DYLD_LIBRARY_PATH is undefined, set it to the following string:
+
+MR/v94/runtime/maci64:MR/v94/sys/os/maci64:MR/v94/bin/maci64
+
+If it is defined, set it to the following:
+
+${DYLD_LIBRARY_PATH}:MR/v94/runtime/maci64:MR/v94/sys/os/maci64:MR/v94/bin/maci64</param.target.install.notes>
+    <param.intermediate>${PROJECT_ROOT}/ROSeq/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/ROSeq/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/ROSeq/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/ROSeq</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text />
+    <unset>
+      <param.version />
+      <param.email />
+      <param.company />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+      <param.help.text />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/03_matlab_files/initializeGUI.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/05_images/RNA.png</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/03_matlab_files/ROSeq.pdf</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/aboutCall.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/analyse_group_Zipf.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/callMainFile.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/defineCallbacks.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/definePanels.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/defineProperties.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/find_a_b.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/findjobj.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_DE.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_I.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_d2logA_da2.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_d2logA_dadb.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_d2logA_db2.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_d2logA_dbda.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_du1_da.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_du1_db.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_du2_da.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_du2_db.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_dv1_da.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_dv1_db.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_dv2_da.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_dv2_db.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_u1.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_u2.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_v1.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/get_v2.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/helpCall.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/inputNumeric.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/minimize_NLL.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/openCall.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/openFile.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/resetCall.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/saveAsCall.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/saveCall.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/saveResultsCall.m</file>
+      <file>${PROJECT_ROOT}/03_matlab_files/selectRadio.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/ROSeq/for_testing" name="ROSeq.app" optional="false">/Users/mananlalit/ROSeq/ROSeq/for_testing/ROSeq.app</file>
+      <file location="${PROJECT_ROOT}/ROSeq/for_testing" name="readme.txt" optional="true">/Users/mananlalit/ROSeq/ROSeq/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/ROSeq/for_testing" name="run_ROSeq.sh" optional="false">/Users/mananlalit/ROSeq/ROSeq/for_testing/run_ROSeq.sh</file>
+      <file location="${PROJECT_ROOT}/ROSeq/for_testing" name="splash.png" optional="false">/Users/mananlalit/ROSeq/ROSeq/for_testing/splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2018a.app</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="polyspacebugfinder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.11.6</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
