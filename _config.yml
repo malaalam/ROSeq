@@ -1,5 +1,5 @@
 title: ROSeq
-description: The R package provides a rank based approach to modelling expression in single cells
+description: The ROSeq package provides a rank based approach to modelling expression in single cells
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman

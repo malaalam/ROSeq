@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Overview of ROSeq | ROSeq</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Overview of ROSeq" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The ROSeq package provides a rank based approach to modelling expression in single cells" />
+<meta property="og:description" content="The ROSeq package provides a rank based approach to modelling expression in single cells" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="ROSeq" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"http://localhost:4000/","headline":"Overview of ROSeq","name":"ROSeq","description":"The ROSeq package provides a rank based approach to modelling expression in single cells","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=e8da161089bbf8007b40119389365bcc856e3747">
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">ROSeq</h1>
+      <h2 class="project-tagline">The ROSeq package provides a rank based approach to modelling expression in single cells</h2>
+      
+        <a href="http://github.com/malaalam/ROSeq" class="btn">Home</a>
+      
+      
+        <a href="http://github.com/malaalam/ROSeq/zipball/gh-pages" class="btn">Package</a>
+        <a href="http://github.com/malaalam/ROSeq/tarball/gh-pages" class="btn">Tutorials</a>
+	<a href="http://github.com/malaalam/ROSeq" class="btn">Help</a>
+        <a href="http://github.com/malaalam/ROSeq" class="btn">View on GitHub</a>
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="overview-of-roseq">Overview of ROSeq</h1>
+
+<p>The <code class="highlighter-rouge">ROSeq</code> package evaluates differential expression between two subpopulations of single cells. Modeling single cell expression is challenging due to high noise levels and technical bias. We  conjectured that considering ranks instead of absolute expression estimates would make a model less susceptible to the noise and the technical bias. <code class="highlighter-rouge">ROSeq</code> obtains a good overall fit in modeling the probability distribution of ranks across genes. The Wald’s test is subsequently used to probe into differential expression across cell sub-types. When applied on real data-sets, <code class="highlighter-rouge">ROSeq</code> performs competitively compared to the state of the art methods.</p>
+
+<p>The overall approach to the differential expression analysis is detailed in the following publication:
+<a href="https://www.biorxiv.org/content/biorxiv/early/2018/07/22/374025.full.pdf">“ROSeq: A rank based approach to modeling gene expression in single cells” (Lalit M, Biswas A, Ghosh A and Sengupta D)</a></p>
+
+<p><strong>For additional installation information, tutorials, and more, please visit <a href="https://malaalam.github.io/ROSeq/">the ROSeq website ☞</a></strong></p>
+
+<h1 id="roseq---a-rank-based-approach-to-modeling-gene-expression-in-single-cells">ROSeq - A rank based approach to modeling gene expression in single cells</h1>
+
+<p>ROSeq evaluates differential expression between two subpopulations of single cells by modeling the rank distribution of read counts for each gene.</p>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Single cell transcriptomics provides a window into cell-to-cell variability in complex tissues. Modeling single cell expression is challenging due to high noise levels and technical bias. In the past few years, considerable efforts have been made to devise suitable parametric models for single cell expression data. We use Discrete Generalized Beta Distribution (DGBD) to model the probability distribution of ranks, corresponding to the read counts for a gene and subpopulation. Use of DGBD yields better overall fit across genes compared to the widely used mixture model comprising Poisson and Negative Binomial density functions. Further, we use Wald’s test to probe into differential expression across cell sub-types. We package our implementation as a <strong>standalone</strong> software called ROSeq. When applied on real data-sets, ROSeq performed competitively compared to the state of the art methods including MAST, SCDE and ROTS.</p>
+
+<h2 id="downloads">Downloads</h2>
+
+<p>The Research Article and Supplementary Material is available for download <a href="https://www.biorxiv.org/content/early/2018/07/22/374025">here</a>.</p>
+
+<p>The R code used for producing differential analysis with methods like SCDE, ROTS, MAST and Wilcoxon-Rank Sum is also available for download in the directory “04_R_code.zip”, which is found in the <strong>Release</strong> section of the repository, in case one wishes to reproduce the results.</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>As a first step, download the complete ROSeq <a href="https://github.com/malaalam/ROSeq">repository</a> on to your PC. This would provide the files needed to run the Tutorial Below.</p>
+
+<p>Also, go to the <strong>Release</strong> Section of the repository and download the executables specific to your operating system. Support is provided for Windows, macOS and Linux. Once the zip folder has been downloaded, extract it to a desirable location. Next, open the <strong>for_redistribution</strong> directory and double click the executable file within to begin the installation process.</p>
+
+<h2 id="tutorial">Tutorial</h2>
+
+<p>This tutorial below, provides instructions to upload the (un) normalized read count data corresponding to single cells coming from the individuals <em>NA19098</em> and <em>NA19101</em>, in the <a href="https://www.ncbi.nlm.nih.gov/pubmed/28045081">tung2017</a> data set; and subsequently analyse the two subpopulations for differential expression.</p>
+
+<p>The number of single cells equals 288 for each individual. After filtering with a threshold equal to six, low quality genes are eliminated and the number of genes considered for differential expression analysis reduces from 19027 to 16087. This is also prompted as a message in the Status Panel.</p>
+
+<p>Following would constitute as a complete set of steps from uploading read count data to saving results as a ‘*.csv’ file:</p>
+
+<ol>
+  <li>
+    <p>Click on the radio button - <em>Upload Raw Read Count file</em>. This would produce an <em>Open File</em> button, for the user to upload the respective file.</p>
+  </li>
+  <li>
+    <p>Click on the <em>Open File</em> button, to select the raw read count file <em>single_counts_no_filter_no_norm.csv</em>. Prior to successful selection of the file, an import wizard window would appear. Click on the buttons <em>Next</em> and <em>Finish</em>.</p>
+  </li>
+  <li>
+    <p>Next, the number of genes in the uploaded file will be suggested (19027). The user could alter the number of genes, in case you wish to look only at the first few (10) genes.</p>
+  </li>
+  <li>
+    <p>Decide on the Filter Threshold. A filter threshold equal to 6, would mean that all genes with the number of non-zero read counts less than 6, would not be considered during the subsequent differential analaysis, as they would be considered <em>low-quality genes</em>.</p>
+  </li>
+  <li>
+    <p>Select the starting (1) and ending (288) column index corresponding to the first group (<em>NA19098</em>). Select the starting (289) and ending (576) column of the second group similarly (<em>NA19101</em>).</p>
+  </li>
+  <li>
+    <p>If all steps were performed so far, then the <em>Solve DE</em> Button becomes enabled. Click on it to run the analysis for differential expression. This would open up a green progress bar for the Subpopulation One, followed by another for Subpopulation Two.</p>
+  </li>
+  <li>
+    <p>Once the analysis is complete, a message (<em>DE analysis completed successfully.</em>) would appear in the <em>Status</em> Panel. At this stage, the ROSeq software would look as in the Figure below.</p>
+  </li>
+  <li>
+    <p>Lastly, click on <em>Save Results</em> button to save the variables [pValue, adjusted pValue and log2(fold count)] as three columns in a *.csv file format.</p>
+  </li>
+</ol>
+
+<p><img src="http://localhost:4000/05_images/ROSeq.PNG" alt="Screenshot of ROSeq" /></p>
+
+<h2 id="datasets">Datasets</h2>
+
+<p>The <a href="https://www.ncbi.nlm.nih.gov/pubmed/28045081">tung2017</a> dataset was downloaded from <a href="https://github.com/jdblischak/singleCellSeq">jdblischak</a>’s Repository. Bulk RNA-seq read count data was extracted from <strong>bulk_reads_per_sample.txt</strong>, while single cell RNA-seq read count data was extracted from <strong>molecules.txt</strong>. (See R code in the Release Subsection of the repository.)</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>In case of any issues or to dive deeper into the implementation, please access the original MATLAB code which has been used to build the Graphical Interface. The file <em>initializeGUI.m</em>, available in the directory <em>03_matlab_files</em> is the entry point to the code. Run this file (press F5 button) and debug! If the problem is not solved through this approach, please feel free to start an <em>issue</em> <a href="https://github.com/malaalam/ROSeq/issues">here</a>.</p>
+
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="http://github.com/malaalam/ROSeq">ROSeq</a> is maintained by <a href="http://github.com/malaalam">malaalam</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
+
